@@ -115,6 +115,8 @@ library(terra)
 land_cover<-rast("Data/raster/Training_s2.tif") 
 #Reduce raster
 land_cover2<-terra::aggregate(land_cover,fact=100,fun="mean",overwrite=T)
+
+#Kenya sub counties
 kenya_wards5<-filter(kenya_wards4,county.x=="KITUI")
 #The land_cover2 cannot be used in leaflet since its a SpatRaster
 #Therefore it has to be changed to RasterLayer
