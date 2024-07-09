@@ -1,0 +1,5 @@
+library(caret)
+library(dplyr)
+mission_list<-read.csv("Mission Reg.csv")
+colnames(mission_list) <-c("Name","Gender","Campus","Year","Phone_no")
+df$Group <- createFolds(df$Gender, k = 5, list = FALSE)
