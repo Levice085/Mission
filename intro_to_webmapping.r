@@ -13,6 +13,7 @@ library(dplyr)
 leaflet() %>%
   addTiles()
 getwd()
+#Loading Kenyan subcounties
 kenya_wards <-st_read("Data/Shapefile/kenya_wards/kenya_wards.shp")
 
 
